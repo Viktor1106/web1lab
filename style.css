@@ -9,6 +9,25 @@ html {
     height: 100%;
 }
 
+div,
+p,
+h1 {
+    overflow-wrap: break-word;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+li {
+    margin-left: 25px;
+}
+
+ol {
+    list-style-position: inside;
+}
+
 .page {
     display: flex;
     flex-direction: column;
@@ -16,15 +35,18 @@ html {
 }
 
 header {
+    display: flex;
     background-color: rgb(130, 108, 108);
     margin: 0px;
     padding: 25px;
+    justify-content: space-between;
 }
 
 .titleText {
-    display: inline-block;
     background-color: aquamarine;
     padding: 3px;
+    text-align: end;
+    width: 500px;
 }
 
 .mainBody {
@@ -59,29 +81,25 @@ header {
 
 .article {
     flex: 2;
+    padding: 5px;
 }
 
 .helperContent {
     flex: 1;
     background-color: rgb(245, 201, 201);
+    padding: 5px;
 }
 
 footer {
     display: flex;
-    flex-direction: row-reverse;
     background-color: rgb(130, 108, 108);
     margin: 0px;
     padding: 25px;
+    justify-content: space-between;
 }
 
 footer .motto {
     background-color: chocolate;
-}
-
-li {
-    margin-left: 25px;
-}
-
-ol {
-    list-style-position: inside;
+    text-align: end;
+    width: 500px;
 }
